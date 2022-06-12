@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Splash View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="SplashViewController" customModule="cocktail" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="summer-607334_1280" translatesAutoresizingMaskIntoConstraints="NO" id="tOH-Uk-ueb">
+                                <rect key="frame" x="0.0" y="0.0" width="1744" height="896"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="tOH-Uk-ueb" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="46a-1f-SA4"/>
+                            <constraint firstAttribute="bottom" secondItem="tOH-Uk-ueb" secondAttribute="bottom" id="Rno-Ji-ReK"/>
+                            <constraint firstItem="tOH-Uk-ueb" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="ZEN-fk-1tz"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="tOH-Uk-ueb" id="wGi-BQ-1fD"/>
+                        <outlet property="leadingConstraint" destination="ZEN-fk-1tz" id="60X-zF-6kH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-947.82608695652186" y="-148.66071428571428"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="summer-607334_1280" width="1280" height="720"/>
+    </resources>
+</document>

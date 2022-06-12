@@ -1,25 +1,57 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zzO-xG-wj9">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="EHf-IW-A2E">
+        <scene sceneID="UK4-ZI-sVx">
             <objects>
-                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController id="zzO-xG-wj9" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5ly-id-Yi2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mblogthumb-phinf.pstatic.net" translatesAutoresizingMaskIntoConstraints="NO" id="NZE-mW-oXR">
+                                <rect key="frame" x="130" y="294" width="154" height="150"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="154" id="1t1-Yg-1No"/>
+                                    <constraint firstAttribute="height" constant="150" id="7ci-cf-Yw4"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="한 잔 어 때" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xrW-qc-FmC">
+                                <rect key="frame" x="149" y="514" width="116" height="95.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                                <color key="textColor" systemColor="systemGreenColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Vhz-Kl-frk"/>
+                        <color key="backgroundColor" red="0.91404086120555572" green="1" blue="0.68742773727259276" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="xrW-qc-FmC" firstAttribute="top" secondItem="NZE-mW-oXR" secondAttribute="bottom" constant="70" id="Iyy-Vt-5tL"/>
+                            <constraint firstItem="NZE-mW-oXR" firstAttribute="top" secondItem="Vhz-Kl-frk" secondAttribute="top" constant="250" id="LXf-az-zj4"/>
+                            <constraint firstItem="NZE-mW-oXR" firstAttribute="leading" secondItem="Vhz-Kl-frk" secondAttribute="leading" constant="130" id="W12-f5-RZp"/>
+                            <constraint firstItem="Vhz-Kl-frk" firstAttribute="trailing" secondItem="xrW-qc-FmC" secondAttribute="trailing" constant="149" id="oef-pa-x1J"/>
+                            <constraint firstItem="Vhz-Kl-frk" firstAttribute="trailing" secondItem="NZE-mW-oXR" secondAttribute="trailing" constant="130" id="pSB-AK-gAe"/>
+                            <constraint firstItem="xrW-qc-FmC" firstAttribute="leading" secondItem="Vhz-Kl-frk" secondAttribute="leading" constant="149" id="w8Q-ww-l9N"/>
+                        </constraints>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nou-Gi-bmp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="424.63768115942031" y="236.38392857142856"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="mblogthumb-phinf.pstatic.net" width="600" height="600"/>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
