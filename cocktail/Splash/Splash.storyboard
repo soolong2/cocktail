@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="summer-607334_1280" translatesAutoresizingMaskIntoConstraints="NO" id="tOH-Uk-ueb">
-                                <rect key="frame" x="0.0" y="0.0" width="1744" height="896"/>
+                                <rect key="frame" x="0.0" y="0.0" width="1579" height="896"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>

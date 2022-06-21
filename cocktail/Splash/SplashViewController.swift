@@ -15,7 +15,7 @@ class SplashViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        UIView.animate(withDuration: 3, delay: 0, options: .curveEaseOut) {
+        UIView.animate(withDuration: 2.5, delay: 0, options: .allowUserInteraction) {
             self.leadingConstraint.constant = -(self.imageView.frame.width - self.view.frame.width)
             self.view.layoutIfNeeded()
         } completion: { _ in
