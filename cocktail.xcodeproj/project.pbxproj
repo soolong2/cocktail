@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		D31F0C282861A176005F9861 /* CocktailCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31F0C272861A176005F9861 /* CocktailCollectionViewCell.swift */; };
+		D335DA01292B0BDD000D6035 /* CocktailApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = D335DA00292B0BDD000D6035 /* CocktailApi.swift */; };
+		D335DA03292B1539000D6035 /* CocktailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D335DA02292B1539000D6035 /* CocktailModel.swift */; };
+		D335DA05292B6AFA000D6035 /* CockatilCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D335DA04292B6AFA000D6035 /* CockatilCodable.swift */; };
+		D335DA07292F0BE5000D6035 /* subViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D335DA06292F0BE5000D6035 /* subViewController.swift */; };
 		D34653F728517E1200504C99 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34653F628517E1200504C99 /* AppDelegate.swift */; };
 		D34653F928517E1200504C99 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34653F828517E1200504C99 /* SceneDelegate.swift */; };
 		D34653FB28517E1200504C99 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34653FA28517E1200504C99 /* ViewController.swift */; };
@@ -20,6 +24,10 @@
 
 /* Begin PBXFileReference section */
 		D31F0C272861A176005F9861 /* CocktailCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocktailCollectionViewCell.swift; sourceTree = "<group>"; };
+		D335DA00292B0BDD000D6035 /* CocktailApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocktailApi.swift; sourceTree = "<group>"; };
+		D335DA02292B1539000D6035 /* CocktailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocktailModel.swift; sourceTree = "<group>"; };
+		D335DA04292B6AFA000D6035 /* CockatilCodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CockatilCodable.swift; sourceTree = "<group>"; };
+		D335DA06292F0BE5000D6035 /* subViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = subViewController.swift; sourceTree = "<group>"; };
 		D34653F328517E1200504C99 /* cocktail.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cocktail.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D34653F628517E1200504C99 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D34653F828517E1200504C99 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -46,8 +54,28 @@
 		D31F0C292861A439005F9861 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				D34653FA28517E1200504C99 /* ViewController.swift */,
+				D335DA06292F0BE5000D6035 /* subViewController.swift */,
+				D31F0C272861A176005F9861 /* CocktailCollectionViewCell.swift */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		D335D9FE2929F62C000D6035 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D335DA02292B1539000D6035 /* CocktailModel.swift */,
+				D335DA04292B6AFA000D6035 /* CockatilCodable.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D335D9FF2929F641000D6035 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				D335DA00292B0BDD000D6035 /* CocktailApi.swift */,
+			);
+			path = API;
 			sourceTree = "<group>";
 		};
 		D34653EA28517E1200504C99 = {
@@ -69,12 +97,12 @@
 		D34653F528517E1200504C99 /* cocktail */ = {
 			isa = PBXGroup;
 			children = (
+				D335D9FF2929F641000D6035 /* API */,
+				D335D9FE2929F62C000D6035 /* Model */,
 				D34C820B2855ECAB00EEB1EA /* Splash */,
 				D31F0C292861A439005F9861 /* Main */,
 				D34653F628517E1200504C99 /* AppDelegate.swift */,
 				D34653F828517E1200504C99 /* SceneDelegate.swift */,
-				D34653FA28517E1200504C99 /* ViewController.swift */,
-				D31F0C272861A176005F9861 /* CocktailCollectionViewCell.swift */,
 				D34653FC28517E1200504C99 /* Main.storyboard */,
 				D34653FF28517E1500504C99 /* Assets.xcassets */,
 				D346540128517E1500504C99 /* LaunchScreen.storyboard */,
@@ -164,7 +192,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D335DA01292B0BDD000D6035 /* CocktailApi.swift in Sources */,
+				D335DA07292F0BE5000D6035 /* subViewController.swift in Sources */,
 				D34653FB28517E1200504C99 /* ViewController.swift in Sources */,
+				D335DA03292B1539000D6035 /* CocktailModel.swift in Sources */,
+				D335DA05292B6AFA000D6035 /* CockatilCodable.swift in Sources */,
 				D34653F728517E1200504C99 /* AppDelegate.swift in Sources */,
 				D31F0C282861A176005F9861 /* CocktailCollectionViewCell.swift in Sources */,
 				D34653F928517E1200504C99 /* SceneDelegate.swift in Sources */,
