@@ -12,7 +12,7 @@ class CocktailCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var cocktailName: UILabel!
     @IBOutlet weak var cocktailImage: UIImageView!
-    
+
     
     func cockailModel(_ model: CockatilModel) {
         cocktailName.text = model.strDrink

@@ -14,6 +14,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     
     @IBOutlet weak var collectionView: UICollectionView!
    
+   
     var cocktailModel : [CockatilModel] = []
     var dumy = ["칵테일","칵테일2","칵테일3","칵테일4","칵테일5","칵테일6","칵테일7","칵테일8","칵테일9"]
     
@@ -31,16 +32,16 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
 //        let data = cocktailModel[indexPath.row]
 //        print(data)
         cell.cocktailImage.layer.cornerRadius = 15
-        cell.cocktailImage.backgroundColor = .red
-        cell.backgroundColor = .blue
+//        cell.backgroundColor = .green
         cell.layer.cornerRadius = 15
-        collectionView.backgroundColor = .yellow
+        
         print(cocktailModel)
         return cell
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
+      
         
         let searchController = UISearchController(searchResultsController: nil)
         searchController.searchBar.placeholder = "찾아보기"
@@ -63,10 +64,13 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         }
     }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        guard let viewController = storyboard?.instantiateViewController(withIdentifier: "subViewController") as? subViewController else {return}
-        navigationController?.pushViewController(viewController, animated: true)
+//        guard let viewController = storyboard?.instantiateViewController(withIdentifier: "subViewController") as? subViewController else {return}
+//        navigationController?.pushViewController(viewController, animated: true)
         
         print("넘어가는거니?")
+    }
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 50
     }
 }
 extension ViewController: UICollectionViewDelegateFlowLayout {
